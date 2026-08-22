@@ -9,9 +9,11 @@ export function Hero() {
     <section id="home" className="relative overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-24">
       <div className="hero-gradient absolute inset-0" aria-hidden="true" />
       <div className="grid-pattern absolute inset-0 opacity-60" aria-hidden="true" />
-      <div className="absolute inset-x-0 top-24 h-80 max-w-6xl sm:mx-auto" aria-hidden="true">
-        <NetworkBackdrop />
-      </div>
+      <div
+        className="absolute inset-x-0 top-16 hidden h-72 max-w-6xl opacity-45 sm:mx-auto lg:block"
+        aria-hidden="true"
+      >
+
 
       <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div>
