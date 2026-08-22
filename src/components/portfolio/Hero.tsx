@@ -10,7 +10,7 @@ export function Hero() {
       <div className="hero-gradient absolute inset-0" aria-hidden="true" />
       <div className="grid-pattern absolute inset-0 opacity-60" aria-hidden="true" />
       <div
-        className="absolute inset-x-0 top-16 hidden h-72 max-w-6xl opacity-45 sm:mx-auto lg:block"
+        className="absolute inset-y-0 left-[45%] right-0 hidden opacity-40 lg:block"
         aria-hidden="true"
       >
         <NetworkBackdrop />
