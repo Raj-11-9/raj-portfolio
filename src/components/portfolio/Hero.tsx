@@ -13,7 +13,8 @@ export function Hero() {
         className="absolute inset-x-0 top-16 hidden h-72 max-w-6xl opacity-45 sm:mx-auto lg:block"
         aria-hidden="true"
       >
-
+        <NetworkBackdrop />
+      </div>
 
       <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
         <div>
