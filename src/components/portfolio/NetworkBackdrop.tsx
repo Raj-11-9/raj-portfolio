@@ -23,7 +23,8 @@ export function NetworkBackdrop() {
 
       {nodes.slice(0, -1).map((n, i) => {
         const next = nodes[i + 1];
-        return (
+        if (!next) return null;
+
           <path
             key={n.label}
             d={`M ${n.x} ${n.y} C ${(n.x + next.x) / 2} ${n.y}, ${(n.x + next.x) / 2} ${next.y}, ${next.x} ${next.y}`}
