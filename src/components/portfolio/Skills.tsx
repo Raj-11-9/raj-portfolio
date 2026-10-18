@@ -31,7 +31,9 @@ export function Identity() {
                     </span>
                     <h3 className="text-sm font-semibold">{group.label}</h3>
                   </div>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{group.blurb}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    {group.blurb}
+                  </p>
                   <p className="mt-4 font-mono text-xs text-primary/80">
                     {group.items.slice(0, 5).join(" · ")}
                   </p>

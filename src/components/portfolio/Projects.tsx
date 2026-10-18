@@ -25,10 +25,24 @@ function NetworkVisual() {
           style={{ animation: `node-pulse ${2.4 + i * 0.3}s ease-in-out infinite` }}
         />
       ))}
-      <text x="40" y="96" fontSize="8" fill="var(--muted-foreground)" textAnchor="middle" className="font-mono">
+      <text
+        x="40"
+        y="96"
+        fontSize="8"
+        fill="var(--muted-foreground)"
+        textAnchor="middle"
+        className="font-mono"
+      >
         monitor
       </text>
-      <text x="280" y="16" fontSize="8" fill="var(--muted-foreground)" textAnchor="middle" className="font-mono">
+      <text
+        x="280"
+        y="16"
+        fontSize="8"
+        fill="var(--muted-foreground)"
+        textAnchor="middle"
+        className="font-mono"
+      >
         hosts
       </text>
     </svg>
@@ -121,7 +135,10 @@ export function Projects() {
                 <ul className="mt-3 grid gap-2 sm:grid-cols-2">
                   {project.features.map((f) => (
                     <li key={f} className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <CheckCircle2 className="mt-0.5 size-3.5 shrink-0 text-cyan" aria-hidden="true" />
+                      <CheckCircle2
+                        className="mt-0.5 size-3.5 shrink-0 text-cyan"
+                        aria-hidden="true"
+                      />
                       {f}
                     </li>
                   ))}

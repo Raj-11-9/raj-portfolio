@@ -26,7 +26,6 @@ export function NetworkBackdrop() {
         if (!next) return null;
         return (
           <path
-
             key={n.label}
             d={`M ${n.x} ${n.y} C ${(n.x + next.x) / 2} ${n.y}, ${(n.x + next.x) / 2} ${next.y}, ${next.x} ${next.y}`}
             fill="none"

@@ -116,7 +116,9 @@ function About() {
         </Reveal>
         <Reveal delay={60}>
           <div className="glass-card h-full p-6">
-            <h3 className="font-mono text-xs uppercase tracking-[0.22em] text-primary">languages</h3>
+            <h3 className="font-mono text-xs uppercase tracking-[0.22em] text-primary">
+              languages
+            </h3>
             <ul className="mt-4 space-y-2">
               {resume.languages.map((l) => (
                 <li key={l} className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -150,8 +152,12 @@ function Portfolio() {
       </main>
       <footer className="border-t border-border py-8">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-3 px-5 font-mono text-xs text-muted-foreground sm:flex-row sm:px-8">
-          <p>© {new Date().getFullYear()} {resume.name}</p>
-          <p>{resume.title} · {resume.contact.location}</p>
+          <p>
+            © {new Date().getFullYear()} {resume.name}
+          </p>
+          <p>
+            {resume.title} · {resume.contact.location}
+          </p>
         </div>
       </footer>
       <Toaster />

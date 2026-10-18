@@ -5,7 +5,12 @@ import { resume } from "@/data/resume";
 import { Reveal, Section } from "./Section";
 
 const details = [
-  { icon: Mail, label: "Email", value: resume.contact.email, href: `mailto:${resume.contact.email}` },
+  {
+    icon: Mail,
+    label: "Email",
+    value: resume.contact.email,
+    href: `mailto:${resume.contact.email}`,
+  },
   { icon: Phone, label: "Phone", value: resume.contact.phone, href: `tel:${resume.contact.phone}` },
   {
     icon: Linkedin,
@@ -67,7 +72,10 @@ export function Contact() {
         <Reveal delay={80}>
           <form onSubmit={onSubmit} className="glass-card grid gap-4 p-6">
             <div className="grid gap-2">
-              <label htmlFor="name" className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+              <label
+                htmlFor="name"
+                className="font-mono text-xs uppercase tracking-widest text-muted-foreground"
+              >
                 Name
               </label>
               <input
@@ -80,7 +88,10 @@ export function Contact() {
               />
             </div>
             <div className="grid gap-2">
-              <label htmlFor="email" className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+              <label
+                htmlFor="email"
+                className="font-mono text-xs uppercase tracking-widest text-muted-foreground"
+              >
                 Email
               </label>
               <input
@@ -94,7 +105,10 @@ export function Contact() {
               />
             </div>
             <div className="grid gap-2">
-              <label htmlFor="message" className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+              <label
+                htmlFor="message"
+                className="font-mono text-xs uppercase tracking-widest text-muted-foreground"
+              >
                 Message
               </label>
               <textarea

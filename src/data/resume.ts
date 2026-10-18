@@ -112,8 +112,7 @@ export const resume = {
       visual: "cloud" as const,
       description:
         "Bash and AWS CLI automation that provisions an EC2 instance and brings up an Apache-hosted website.",
-      problem:
-        "Manual EC2 provisioning and web server setup is repetitive and error-prone.",
+      problem: "Manual EC2 provisioning and web server setup is repetitive and error-prone.",
       tech: ["AWS EC2", "AWS CLI", "Bash", "Linux", "Apache"],
       features: [
         "Automated EC2 deployment",
@@ -177,7 +176,10 @@ export const resume = {
       stage: "Networking",
       detail: "Cisco routing and switching, VLANs, OSPF, NAT and ACLs.",
     },
-    { stage: "Cloud", detail: "AWS EC2, EBS, AMI, IAM-adjacent access via key pairs and security groups." },
+    {
+      stage: "Cloud",
+      detail: "AWS EC2, EBS, AMI, IAM-adjacent access via key pairs and security groups.",
+    },
     { stage: "DevOps", detail: "Docker, Git/GitHub and Bash-driven automation." },
   ],
 };
