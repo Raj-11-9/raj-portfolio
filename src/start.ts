@@ -27,3 +27,4 @@ const csrfMiddleware = createCsrfMiddleware({
 export const startInstance = createStart(() => ({
   requestMiddleware: [errorMiddleware, csrfMiddleware],
 }));
+// this code is only run on the server, so we can safely import server-only modules here
